@@ -86,7 +86,7 @@ case 6:
   double x;
     cout<<"type the value of num.\n";
     cin>>num;
- for( long double i=num; i>3.14159265358979323846; i-=6.283185307179586476){
+ for( long double i=num; i>-3.14159265358979323846; i-=6.283185307179586476){
    cout<<i<<endl;
    
  }
