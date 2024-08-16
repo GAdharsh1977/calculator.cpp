@@ -15,7 +15,7 @@ cout << "Choose the operation you want to perform.\n";
 cout<<endl;
 
 cout<<" Press '1' for sum, \n Press '2' for difference, \n Press '3' for product, \n Press '4' for quotient, \n Press '5' for reciprocal,\n";
- cout<<" Press '6' for trigonometric functions, \n Press '7' for square root, \n Press '8' for log. \n";
+ cout<<" Press '6' for trigonometric functions, \n Press '7' for square root, \n Press '8' for log, \n Press '9' for mod";
 cout<<endl;
 cout <<"Type the corresponding number: \n";
 cin >> operation;
@@ -86,7 +86,7 @@ case 6:
   double x;
     cout<<"type the value of num.\n";
     cin>>num;
- for( long double i=num; i>-3.14159265358979323846; i-=6.283185307179586476){
+ for( long double i=num; i>3.14159265358979323846; i-=6.283185307179586476){
    cout<<i<<endl;
    
  }
