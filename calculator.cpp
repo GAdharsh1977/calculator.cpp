@@ -15,7 +15,8 @@ cout << "Choose the operation you want to perform.\n";
 cout<<endl;
 
 cout<<" Press '1' for sum, \n Press '2' for difference, \n Press '3' for product, \n Press '4' for quotient, \n Press '5' for reciprocal,\n";
- cout<<" Press '6' for trigonometric functions, \n Press '7' for square root, \n Press '8' for log, \n Press '9' for mod";
+ cout<<" Press '6' for trigonometric functions, \n Press '7' for square root, \n Press '8' for log,\n Press '9' for mod,\n Press '10' for quadratic formula,\n";
+cout<<" Press '11' for solving linear equations.\n";
 cout<<endl;
 cout <<"Type the corresponding number: \n";
 cin >> operation;
@@ -84,7 +85,8 @@ case 5:
 case 6:
 {
   double x;
-    cout<<"type the value of num.\n";
+
+    cout<<"type the value of num(in RADIANS)\n";
     cin>>num;
  for( long double i=num; i>-3.14159265358979323846; i-=6.283185307179586476){
    cout<<i<<endl;
@@ -189,7 +191,6 @@ switch(base)
 }
 case 9:
 {
-  case 5:
 cout<<"Enter the value of num: \n";
 cin>>num;
 
@@ -200,11 +201,84 @@ else
 cout<<"the value of mod(num) is: " << num;
 break;
 }
+
+case 10:
+{
+double a, b, c, x, y;
+cout<<"Equation is of the format a(x^2)+bx+c,\nHaving roots x1 and x2"<<endl;
+
+cout<<"Enter the value of a"<<endl;
+cin>>a;
+
+cout<<"Enter the value of b"<<endl;
+cin>>b;
+
+cout<<"Enter the value of c"<<endl;
+cin>>c;
+
+double d;
+d = (b*b)-(4*a*c);
+if(d<0)
+cout<<"The given quadratic equation does not have real roots"<<endl;
+
+else if(d>0)
+{
+float i=0;
+  while(i*i<=d){
+    if(i*i==d){
+    }
+  i++;
+}
+  i--;
+  while(i*i<=d){
+    i=i+0.00001;
+  }
+    i=i-0.00001;
+ double x1, x2;
+ x1 = (-b + i)/(2*a);
+ x2 = (-b - i)/(2*a);
+ cout<<"The values of real roots of the quadratic equation are "<<x1<<" and "<<x2<<endl;
+}
+else
+double x;
+x = (-b)/(2*a);
+cout<<"The equation has one real root which is "<<x<<"."<<endl;
+break;
+}
+case 11:
+{
+  double a,b,c,d,e,f,x,y;
+cout<<endl;
+cout<<"Linear equations are of the form \nax+by+c=0 and dx+ey+f=0"<<endl;
+cout<<endl;
+cout<<"Enter the value of a"<<endl;
+cin>>a;
+cout<<endl;
+cout<<"Enter the value of b"<<endl;
+cin>>b;
+cout<<endl;
+cout<<"Enter the value of c"<<endl;
+cin>>c;
+cout<<endl;
+cout<<"Enter the value of d"<<endl;
+cin>>d;
+cout<<endl;
+cout<<"Enter the value of e"<<endl;
+cin>>e;
+cout<<endl;
+cout<<"Enter the value of f"<<endl;
+cin>>f;
+cout<<endl;
+x = ((b*f)-(e*c))/((a*e)-(b*d));
+y = ((c*d)-(f*a))/((a*e)-(b*d));
+
+cout<<"The value of x is "<<x<<endl;
+cout<<"The value of y is "<<y<<endl;
+break;
+}
 return 0;
 }
 }
-
-
 
 
 
