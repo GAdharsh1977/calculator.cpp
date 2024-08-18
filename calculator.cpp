@@ -139,6 +139,8 @@ for(double i=x; i>1; i/=2){
 }
 cout<<"enter the number on the bottom row"<<endl;
 cin>>num;
+ cout<<"enter the number "<<num/2<<" for calculating log"<<endl;
+ cin>>x;
 long double loga = (x-1) - ((x-1)*(x-1)/2) + ((x-1)*(x-1)*(x-1)/3) - ((x-1)*(x-1)*(x-1)*(x-1)/4) + ((x-1)*(x-1)*(x-1)*(x-1)*(x-1)/5);
 long double logb = -((x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)/6) + ((x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)/7) - ((x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)/8);
 long double logc = ((x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)/9) - ((x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)/10);
@@ -154,7 +156,7 @@ long double logl = -((x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)
 long double logm = ((x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)/21);
 long double logn = -((x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)*(x-1)/22);
 
-long double adharshlog = loga + logb + logc + logd + loge + logf + logg + logh + logi + logj + logk + logl + logm + logn + (count-2)*(0.69314718055994531); //0.6931..=ln2
+long double adharshlog = loga + logb + logc + logd + loge + logf + logg + logh + logi + logj + logk + logl + logm + logn + (count)*(0.69314718055994531); //0.6931..=ln2
 cout<<"enter the base for the operation, for base e, enter '1', for base 10, enter '2'."<<endl;
 cin>>base;
 switch(base)
